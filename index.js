@@ -20,26 +20,26 @@
 // }
 
 function gerarNome(){
-    if (dispatchEvent.value == ""){
+    if(dia.value == ""){
         alert("Informe o dia");
         return;
     }
-}
-let nome = "";
 
-if (dispatchEvent.value >=1 && dia.value <=8){
-    nome = "Desenvolvedor (a)"
-    console.log ("Nome: ,nome");
-}
-else if (dispatchEvent.value >=9 && dia.value <=18){
-    nome = "Programador (a)"
-    console.log ("Nome: ,nome");
-}
-else if (dispatchEvent.value >=9 && dia.value <=18){
-    nome = "Programador (a)"
-    console.log ("Nome: ,nome");
-}
-else if (dispatchEvent.value >=9 && dia.value <=18){
-    nome = "Programador (a)"
-    console.log ("Nome: ,nome");
+    let nome = "";
+
+    if(dia.value >= 1 && dia.value <= 8){
+        nome = "Desenvolvedor(a)"
+        console.log("Nome: ",nome);
+    }else if(dia.value >= 9 && dia.value <= 18){
+        nome = "Programador(a)"
+        console.log("Nome: ",nome);
+    }else if(dia.value >= 19 && dia.value <= 26){
+        nome = "Estagiario(a)"
+        console.log("Nome: ",nome);
+    }else{
+        nome = "Senior(a)"
+        console.log("Nome: ",nome);
+    }
+
+    resposta.innerHTML = "frase completa"
 }
